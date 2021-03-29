@@ -16,9 +16,6 @@
     </b-collapse>
   </div>
 </template>
-<style>
-
-</style>
 <script>
   export default {
       data(){
@@ -36,3 +33,6 @@
   }
 
 </script>
+<style lang="scss" scoped>
+
+</style>
