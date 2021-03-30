@@ -37,7 +37,6 @@
 
       getMedian() {
         const sorting = this.value.sort()
-        console.log(sorting);
         const mid = Math.ceil(this.value.length / 2);
         const valueMedian = (mid % 2 != 0) ? (sorting[mid] + sorting[mid - 1]) / 2 : sorting[mid -
           1];

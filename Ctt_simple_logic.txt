@@ -1,2 +1,3 @@
 --- perlu dipelajari lanjut
 1. tentang median
+2. reskrusif = adalah nilai dimana function tersebut mengalikan dirinya sendiri, seperti perulangan for tetapi perulangan dengan funcion dirinya sendiri (return funcionally self)

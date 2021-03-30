@@ -35,7 +35,6 @@
       palindromWord() {
         let statePalindrom = '';
         for ( let item of this.data) {
-          console.log(item)
           var len = item.length;
           var mid = Math.floor(len / 2);
 
