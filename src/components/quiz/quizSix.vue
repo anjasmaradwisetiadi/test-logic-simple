@@ -12,16 +12,12 @@
             <div class="row">
               <div class="col-4">
                 <b-form-input v-model.number="valuePangkat" placeholder="masuakan nilai mu"></b-form-input>
-                <b-form-input v-model.number="pangkat" placeholder="masukan nilai pangkat"></b-form-input>
-                <button class="btn btn-primary" @click="countPangkat(valuePangkat,pangkat)"> Hasil </button>
+                <b-form-input class="mt-2" v-model.number="pangkat" placeholder="masukan nilai pangkat"></b-form-input>
+                <button class="btn btn-primary mt-2" @click="countPangkat(valuePangkat,pangkat)"> Hasil </button>
               </div>
               <div class="col-8">
                   <div class="">Value: {{ resultPangkat }}</div>
               </div>
-            </div>
-            <!-- rekrusif biasa -->
-            <div class="row">
-              <div class="col"></div>
             </div>
           </b-card>
         </b-collapse>
@@ -47,9 +43,6 @@
               }
               return this.resultPangkat= valuePangkat*this.countPangkat(valuePangkat, pangkat-1) 
           },
-          countRekrusif(){
-              
-          }
       }
   }
 
