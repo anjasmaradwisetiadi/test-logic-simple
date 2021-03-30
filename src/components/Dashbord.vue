@@ -9,6 +9,8 @@
             <quiz-three></quiz-three>
             <quiz-four></quiz-four>
             <quiz-six></quiz-six>
+            <quiz-seven></quiz-seven>
+            <quiz-eleven></quiz-eleven>
           </div>
         </div>
       </div>
@@ -21,6 +23,8 @@
   import QuizTwo from './quiz/quizTwo.vue'
   import QuizFour from './quiz/quizFour.vue'
   import QuizSix from './quiz/quizSix.vue'
+  import QuizSeven from './quiz/quizSeven.vue'
+  import QuizEleven from './quiz/quizEleven.vue'
 
   export default {
     components: {
@@ -28,11 +32,12 @@
       QuizTwo,
       QuizThree,
       QuizFour,
-      QuizSix
+      QuizSix,
+      QuizSeven,
+      QuizEleven
     },
 
   }
-
 </script>
 
 <style scoped>
