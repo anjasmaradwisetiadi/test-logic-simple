@@ -11,6 +11,7 @@
             <quiz-six></quiz-six>
             <quiz-seven></quiz-seven>
             <quiz-eleven></quiz-eleven>
+            <quiz-ten></quiz-ten>
           </div>
         </div>
       </div>
@@ -25,6 +26,7 @@
   import QuizSix from './quiz/quizSix.vue'
   import QuizSeven from './quiz/quizSeven.vue'
   import QuizEleven from './quiz/quizEleven.vue'
+import QuizTen from './quiz/quizTen.vue'
 
   export default {
     components: {
@@ -34,7 +36,8 @@
       QuizFour,
       QuizSix,
       QuizSeven,
-      QuizEleven
+      QuizEleven,
+      QuizTen
     },
 
   }
