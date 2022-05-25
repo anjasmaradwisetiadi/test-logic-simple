@@ -20,11 +20,6 @@
 import {dataEmployee} from '../../data/dataEmployee'
 
 export default {
-    data(){
-        return{
-
-        }
-    },
 
     computed:{
         lookEmployee(){

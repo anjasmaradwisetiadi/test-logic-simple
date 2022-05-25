@@ -15,42 +15,35 @@
 </template>
 <script>
   export default {
-      data(){
-          return{
-            dataIsi:[3, 5, 2, -4, 8, 11, 4, -1]
-          }
-      },
-      computed:{
-          displayData(){
-                let data=this.dataIsi;
-                let collectData=[];
-                let reduceData=[];
-                let hasilTrue=false
-                for(let i=0;i<data.length;i++){
-                    for(let j=0;j<data.length;j++){
-                        if((data[i]+data[j])===7)
-                        collectData.push([data[i],data[j]])
-                    }
-                }
-                // console.log(collectData);
-                for(let i=0;i<collectData.length;i++){
-                  for(let j=0;j<collectData.length;j++){
-                    let dataCollectOut=collectData[i]
-                    let dataCollectInside=collectData[j]
-                    if (dataCollectOut[0] === dataCollectInside[1] && dataCollectOut[1] === dataCollectInside[0]){
-                      console.log("berhasil masuk")
-                      reduceData.push(collectData[i])
-                    }
-                  }
-                }
-                // console.log("data collectData uji coba")
-                // console.log(...collectData[0])
-                console.log("data reduce")
-                console.log(reduceData)
-                return collectData;
-          }
-
+    data() {
+      return {
+        dataIsi: [3, 5, 2, -4, 8, 11, 4, -1]
       }
+    },
+    computed: {
+      displayData() {
+        let data = this.dataIsi;
+        let collectData = [];
+        let reduceData = 0;
+
+        data = data.sort(function (a, b) {
+          return a - b
+        })
+
+        let hasilTrue = false
+        for (let i = 0; i < data.length; i++) {
+          for (let j = 0; j < data.length; j++) {
+            if ((data[i] + data[j]) === 7)
+              collectData.push([data[i], data[j]])
+          }
+        }
+
+        reduceData=((collectData.length)/2)
+
+        return collectData;
+      }
+
+    }
   }
 
 </script>
